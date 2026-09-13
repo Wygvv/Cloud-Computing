@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registro de Productos</title>
+
+    <!-- Enlace al archivo CSS principal -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <h1>Registro de Productos</h1>
+
+        <p>
+            Ingresa los datos del producto para guardarlo de forma local.
+        </p>
+
+        <!-- Campo ID -->
+        <input
+            type="text"
+            id="idProducto"
+            placeholder="ID del producto"
+        >
+
+        <!-- Campo nombre -->
+        <input
+            type="text"
+            id="nombreProducto"
+            placeholder="Nombre del producto"
+        >
+
+        <!-- Campo precio -->
+        <input
+            type="number"
+            id="precioProducto"
+            placeholder="Precio"
+        >
+
+        <!-- Campo stock -->
+        <input
+            type="number"
+            id="stockProducto"
+            placeholder="Stock"
+        >
+
+        <!-- Botón para guardar -->
+        <button id="btnGuardar">
+            Guardar producto
+        </button>
+
+        <br><br>
+
+        <!-- Navegación -->
+        <a href="../index.html">
+            Volver al inicio
+        </a>
+
+    </div>
+
+    <!-- Archivo JavaScript -->
+    <script src="../js/productos.js"></script>
+
+</body>
+
+</html>
