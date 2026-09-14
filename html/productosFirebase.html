@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Productos Firebase</title>
+
+    <!-- Enlace al CSS principal -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <h1>Productos Firebase</h1>
+
+        <p>
+            Productos almacenados en Cloud Firestore.
+        </p>
+
+        <!-- Buscador de productos -->
+        <input
+            type="text"
+            id="buscarProductoFirebase"
+            placeholder="Buscar por nombre o ID"
+        >
+
+        <br><br>
+
+        <!-- Tabla de productos -->
+        <table border="1" width="100%">
+
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Stock</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+
+            <tbody id="tablaProductosFirebase">
+
+                <!--
+                    Los productos de Firestore
+                    se cargarán aquí automáticamente
+                    desde listarProductosFirebase.js
+                -->
+
+            </tbody>
+
+        </table>
+
+        <!-- NAVEGACIÓN -->
+<br><br>
+
+<a href="registroFirebase.html">
+            Registrar nuevo producto
+        </a>
+
+<br><br>
+
+<a href="firebase.html">
+    Volver a Firebase
+</a>
+
+<br><br>
+
+<a href="../index.html">
+    Volver al inicio
+</a>
+
+    </div>
+
+
+    <!--
+        IMPORTANTE:
+        type="module" permite utilizar import/export
+        para trabajar con Firebase
+    -->
+    <script
+        type="module"
+        src="../js/listarProductosFirebase.js">
+    </script>
+
+</body>
+
+</html>

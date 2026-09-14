@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Registro de Productos</title>
+    <title>Registro Firebase</title>
 
-    <!-- Enlace al archivo CSS principal -->
+    <!-- Estilos principales -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
@@ -15,70 +15,67 @@
 
     <div class="contenedor">
 
-        <h1>Registro de Productos</h1>
+        <h1>Registro Firebase</h1>
 
         <p>
-            Ingresa los datos del producto para guardarlo de forma local.
+            Ingresa un producto para guardarlo en Firestore.
         </p>
 
-        <!-- Campo ID -->
         <input
             type="text"
             id="idProducto"
             placeholder="ID del producto"
         >
 
-        <!-- Campo nombre -->
         <input
             type="text"
             id="nombreProducto"
             placeholder="Nombre del producto"
         >
 
-        <!-- Campo precio -->
         <input
             type="number"
             id="precioProducto"
             placeholder="Precio"
         >
 
-        <!-- Campo stock -->
         <input
             type="number"
             id="stockProducto"
             placeholder="Stock"
         >
 
-        <!-- Botón para guardar -->
-        <button id="btnGuardar">
-            Guardar producto
+        <button id="btnGuardarFirebase">
+            Guardar en Firebase
         </button>
 
-        <br><br>
-
         <!-- NAVEGACIÓN -->
-        <br><br>
+<br><br>
 
-        <a href="productos.html">
-        Ver Productos
-        </a>
+<a href="productosFirebase.html">
+    Ver Productos
+</a>
 
-        <br><br>
+<br><br>
 
-        <a href="local.html">
-        Volver a LocalStorage
-        </a>
+<a href="firebase.html">
+    Volver a Firebase
+</a>
 
-        <br><br>
+<br><br>
 
-    <a href="../index.html">
+<a href="../index.html">
     Volver al inicio
-    </a>
+</a>
 
     </div>
 
-    <!-- Archivo JavaScript -->
-    <script src="../js/productos.js"></script>
+    <!-- IMPORTANTE:
+         type="module" permite usar import/export -->
+    <script
+        type="module"
+        src="../js/productosFirebase.js">
+    </script>
 
 </body>
 
